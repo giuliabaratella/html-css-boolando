@@ -80,6 +80,8 @@ header img {
     margin-top: 70px;
     padding: 60px 5px;
 }
+
+/* card  */
 .item-card {
     max-width: 33%;
     padding: 20px 5px;
@@ -102,7 +104,7 @@ header img {
     display: inline-block;
 }
 
-
+/* labels  */
 .label-discounts {
     position: absolute;
     left: 0;
@@ -133,6 +135,8 @@ header img {
 .favourite-item:hover {
     color: var(--color-discount);
 }
+
+/* card text  */
 .discount-price {
     font-weight: bold;
     color: var(--color-discount);
