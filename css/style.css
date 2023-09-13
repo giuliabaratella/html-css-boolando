@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1450px;
     margin: 0 auto;
     padding: 0 5px;
 }
@@ -34,6 +34,7 @@ a:hover {
     text-decoration: underline;
 }
 
+
 /* Flex  */
 .d-flex {
     display:flex;
@@ -45,23 +46,28 @@ a:hover {
     align-items: center;
     align-content: center;
 }
+.wrap {
+    flex-flow: row wrap;
+}
 
-/* Nav  */
-nav {
+/* Header */
+header {
     height: 70px;
     width: 100%;
     background-color: var(--color-nav);
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
     color: var(--color-background);
 }
 
-nav .container {
+header .container {
     padding-top: 20px;
 }
 
-nav img {
-    width: 12%;
+header img {
+    width: 10%;
     min-width: 100px;
 }
 
@@ -69,8 +75,62 @@ nav img {
     font-weight: bold;
 }
 
-main {
-    padding: 100px 0;
+/* main  */
+.shop {
+    margin-top: 70px;
+    padding: 60px 5px;
+}
+.item-card {
+    max-width: 30%;
+}
+.item-photo {
+    position: relative;
+}
+.item-photo img {
+    max-width: 100%;
+}
+
+.label-discounts {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1em;
+}
+.discount-percentage {
+    background-color: var(--color-discount);
+    padding: 5px 10px;
+    color: var(--color-background);
+}
+.sustainability {
+    background-color: var(--color-sustainability);
+    padding: 5px 10px;
+    color: var(--color-background);
+}
+.favourite-item {
+    font-size: 2em;
+    background-color: var(--color-background);
+    padding: 5px 15px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.discount-price {
+    font-weight: bold;
+    color: var(--color-discount);
+}
+.original-price {
+    text-decoration: line-through;
+}
+
+.item-text h5 {
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+.item-text h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
 
 
@@ -79,6 +139,7 @@ footer {
     background-color: var(--color-footer);
     padding: 30px 5px;
     color: var(--color-background);
+    margin-top: 40px;
 }
 .info-section a {
     font-size: 0.9em;
