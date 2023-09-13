@@ -21,11 +21,17 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 5px;
 }
 
 a {
     text-decoration: none;
     color: var(--color-background);
+    padding: 0 5px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Flex  */
@@ -60,8 +66,28 @@ nav img {
 }
 
 .nav-sections a, .nav-utilities a {
-    padding: 0 5px;
     font-weight: bold;
 }
 
+main {
+    padding: 100px 0;
+}
 
+
+/* footer  */
+footer {
+    background-color: var(--color-footer);
+    padding: 30px 5px;
+    color: var(--color-background);
+}
+.info-section a {
+    font-size: 0.9em;
+}
+.info-section h3 {
+    padding: 0 0 5px 5px;
+}
+
+.social-section i {
+    font-size: 1.3em;
+    padding-top: 10px;
+}
