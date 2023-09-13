@@ -78,7 +78,7 @@ header img {
 /* main  */
 .shop {
     margin-top: 70px;
-    padding: 60px 0;
+    padding: 60px 5px;
 }
 .item-card {
     max-width: 33%;
@@ -90,6 +90,18 @@ header img {
 .item-photo img {
     max-width: 100%;
 }
+
+.item-img-hidden {
+    display:none
+}
+
+.item-card:hover .item-img-main{
+    display: none;
+}
+.item-card:hover .item-img-hidden{
+    display: inline-block;
+}
+
 
 .label-discounts {
     position: absolute;
