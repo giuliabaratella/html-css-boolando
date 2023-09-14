@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--color-footer);
 }
 
 :root {
@@ -49,6 +50,12 @@ a:hover {
 .wrap {
     flex-flow: row wrap;
 }
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-end {
+    justify-content: flex-end;
+}
 
 /* Header */
 header {
@@ -64,7 +71,7 @@ header {
 }
 
 header .container {
-    padding-top: 20px;
+    height:100%;
 }
 
 header img {
@@ -72,11 +79,17 @@ header img {
     min-width: 100px;
 }
 
+.nav-sections, .nav-utilities {
+    width: 25%;
+}
 .nav-sections a, .nav-utilities a {
     font-weight: bold;
 }
 
 /* main  */
+main {
+    background-color: var(--color-background);
+}
 .shop {
     margin-top: 70px;
     padding: 60px 5px;
