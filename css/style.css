@@ -47,6 +47,10 @@ a:hover {
     align-items: center;
     align-content: center;
 }
+.align-start {
+    align-items: flex-start;
+    align-content: flex-start;
+}
 .wrap {
     flex-flow: row wrap;
 }
@@ -123,7 +127,6 @@ main {
     position: absolute;
     left: 0;
     bottom: 50px;
-    z-index: 2;
     font-weight: bold;
     font-size: 1em;
 }
@@ -131,6 +134,7 @@ main {
     background-color: var(--color-discount);
     padding: 5px 10px;
     color: var(--color-background);
+    margin-right: 5px;
 }
 .sustainability {
     background-color: var(--color-sustainability);
